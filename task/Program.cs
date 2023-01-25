@@ -1,5 +1,18 @@
 ﻿class Program
 {
+    static void Main(string[] args)
+    {
+        string[] initialArray = CreateArray();
+        if (initialArray.Length == 0)
+        {
+            Console.WriteLine("Пустой массив!");
+            return;
+        }
+
+        string[] filteredArray = FilteredArray(initialArray);
+        if (filteredArray.Length == 0) Console.WriteLine("В массиве не найдено элементов длиной <= 3");
+        else PrintArray(filteredArray);
+    }
     public static string[] CreateArray()
     {
         Console.WriteLine("Введите элементы массива через пробел:");
