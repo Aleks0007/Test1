@@ -8,4 +8,11 @@
         string[] inputArray = input.Split(' ');
         return inputArray;
     }
+
+    public static void PrintArray(string[] array)
+    {
+        Console.WriteLine();
+        Console.WriteLine("Результирующий массив:");
+        Console.WriteLine(string.Join(" ", array));
+    }
 }
